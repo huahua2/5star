@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>五星标杆</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3b9bff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+    <div id="wrapper" class="wrapper">
+        <div style="position: absolute; width: 100%; height: 200%; transition: 0ms cubic-bezier(0.1, 0.57, 0.1, 1); transform: translate(0px, 0px) translateZ(0px);">
+            <section class="section section1 active">
+                <div class="s1 medal"></div>
+                <div class="cloud"></div>
+                <div class="s1 qenguin1"></div>
+                <div class="s1 qenguin2"></div>
+                <div class="s1 qenguin3"></div>
+                <span class="sj"></span>
+                <em class="star1 t3"></em>
+                <em class="star2 t1"></em>
+                <em class="star3 t4"></em>
+                <em class="star4 t3"></em>
+                <em class="star5 t7"></em>
+                <em class="star6 t6"></em>
+                <em class="star7 t1"></em>
+                <em class="star8 t2"></em>
+                <em class="star9 t1"></em>
+                <em class="star10 t4"></em>
+                <em class="star11 t5"></em>
+                <em class="star12 t4"></em>
+                <em class="star13 t1"></em>
+                <em class="star14 t1"></em>
+                 <em class="star15 t4"></em>
+            </section>
+            <section class="section section2">
+                <div class="s2 bg"></div>
+                <div class="name">sonyahuang(黄诗卉)</div>
+                <p class="p1">您于 <span>2013.07.19</span> 加入鹅鹅伐木累</p>
+                <p class="p2">已累计获得5星<span>2次</span>啦</p>
+                <p class="p3">超越了<span>92.6%</span>的鹅厂精英</p>
+                <div class="s2 tencent"></div>
+                <div class="s2 bluestar"></div>
+                <div class="s2 rocket"></div>
+                <div class="s2 qenguin"></div>
+                <div class="s2 seal"></div>
+                <svg version="1.1" baseProfile="full" id="s2-path" height="116px" width="184px">
+                    <switch>
+                        <path stroke="#d4b64d" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M 179.3556,2.7347741 -2.2789784,35.552063 183.00196,87.968566 33.500982,115.08841 62.857143,216.28571"></path>
+                    </switch>
+                </svg>
+                <b class="s2 point1"></b><b class="s2 point2"></b><b class="s2 point3"></b><b class="s2 point4"></b>
+            </section>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/iscroll_min.js"></script>
+    <script type="text/javascript">
+    var instance = new IScroll("#wrapper", {
+        scrollX: false,
+        scrollY: true,
+        momentum: false,
+        snap: true,
+        click: true
+    });
+    instance.on('scrollEnd', function(e) {
+        var idx = this.currentPage.pageY;
+        $(".section").removeClass('active');
+        $('.section' + (idx + 1)).addClass('active');
+    });
+    </script>
+</body>
+
+</html>
