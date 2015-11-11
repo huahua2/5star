@@ -599,6 +599,7 @@ p span {
         animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
     }
 }
+.svgcenter{opacity: 0;}
 .active .svgcenter{
     left:50%;
     position: absolute;
@@ -606,6 +607,7 @@ p span {
     margin-left: -79px;
     height: 116px;
     width: 184px;
+    opacity: 1;
 }
 .active #s2-path {
      stroke-dasharray: 2000;
